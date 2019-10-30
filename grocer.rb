@@ -22,13 +22,14 @@ def consolidate_cart(cart)
   array = []
   i = 0 
   while i < cart.length do 
-    item_name = cart[i][:item]
-    item_data = cart[i]
-    item_data[:count] = 1
-    if !array.include?(item_name)
-      array << item_data
-    else array[item_name][:count] += 1
-    end
+    item_name = find_item_by_name_in_collection(cart[i][:item], cart)
+    # item_name = cart[i][:item]
+    # item_data = cart[i]
+    # item_data[:count] = 1
+    # if !array.include?(item_name)
+    #   array << item_data
+    # else array[item_name][:count] += 1
+    # end
     i += 1
   end
   array
