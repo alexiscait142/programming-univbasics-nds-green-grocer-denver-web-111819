@@ -43,6 +43,7 @@ def apply_coupons(cart, coupons)
     if item_name
       
       
+      
     end
     i += 1
   end
