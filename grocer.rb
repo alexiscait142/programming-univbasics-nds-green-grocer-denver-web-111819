@@ -25,15 +25,12 @@ def consolidate_cart(cart)
     item_name = find_item_by_name_in_collection(cart[i][:item], array)
     if item_name
       item_name[:count] += 1
-    else 
+    else item_name = {
+      :price => cart[i][:price],
+      :clearance => art[i][:clearance],
+      :count => 1
+    }
     end
-    # item_name = cart[i][:item]
-    # item_data = cart[i]
-    # item_data[:count] = 1
-    # if !array.include?(item_name)
-    #   array << item_data
-    # else array[item_name][:count] += 1
-    # end
     i += 1
   end
   array
