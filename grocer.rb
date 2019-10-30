@@ -74,5 +74,7 @@ def checkout(cart, coupons)
   all_cart = consolidate_cart(cart)
   coupon_cart = apply_coupons(all_cart, coupons)
   clearance_cart = apply_clearance(coupon_cart)
-  binding.pry
+  i = 0 
+  while i < clearance_cart.length do 
+    clearance_cart[:price] * [:count]
 end
