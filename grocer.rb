@@ -41,6 +41,7 @@ def apply_coupons(cart, coupons)
     coupon_item = "#{coupon[i][:item]} W/COUPON"
     if item_name
       
+      
     end
     i += 1
   end
