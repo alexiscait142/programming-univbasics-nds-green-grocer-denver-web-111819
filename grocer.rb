@@ -25,7 +25,7 @@ def consolidate_cart(cart)
     item_name = find_item_by_name_in_collection(cart[i][:item], array)
     if item_name
       item_name[:count] += 1
-    else array << 
+    else 
     end
     # item_name = cart[i][:item]
     # item_data = cart[i]
